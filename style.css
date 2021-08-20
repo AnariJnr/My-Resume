@@ -1,0 +1,397 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Commissioner";
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #03a9f4;
+}
+
+body {
+  background: #f2f2f2;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+}
+
+.Container {
+  position: relative;
+  background: lightgoldenrodyellow;
+  width: 600%;
+  max-width: 1000px;
+  min-height: 1000px;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+  margin: 50px;
+  border-radius: 20px;
+}
+
+.Container .The_left_side {
+  position: relative;
+  background: url(images/opns.jpg);
+  border-radius: 20px 20px 0px 0px;
+  background-size: cover;
+  padding: 40px;
+  height: 1200px;
+}
+
+.textprofile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgb(173, 173, 173);
+}
+
+.textprofile .imagebox {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  overflow: hidden;
+  border: white 7px solid;
+}
+
+.textprofile imagebox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.textprofile h2 {
+  color: lightgoldenrodyellow;
+  font-size: 1.5em;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 500;
+  line-height: 1.4em;
+}
+
+.textprofile h2 span {
+  font-size: 0.8em;
+  font-weight: 300;
+}
+
+.Mycontact {
+  padding-top: 40px;
+}
+
+.title {
+  color: lightgoldenrodyellow;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.Mycontact ul {
+  position: relative;
+}
+
+.Mycontact ul li {
+  position: relative;
+  list-style: none;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.Mycontact ul li .icon {
+  display: inline-block;
+  width: 30px;
+  font-size: 18px;
+  color: #03a9f4;
+}
+
+.Mycontact ul li span {
+  color: #848c99;
+  font-weight: 300;
+}
+
+.Mycontact ul li a:hover span {
+  color: #03a9f4;
+}
+
+.Mycontact.education {
+  float: right;
+  margin-top: -237px;
+  margin-right: 80px;
+}
+
+.Mycontact.education ul li {
+  margin-left: 33px;
+}
+
+.Mycontact.education li {
+  margin-bottom: 15px;
+}
+
+.Mycontact.education h5 {
+  color: #03a9f4;
+  font-weight: 500;
+}
+
+.Mycontact.education h4:nth-child(2) {
+  color: #e6e7e9;
+  font-weight: 500;
+}
+
+.Mycontact.education h4 {
+  color: #e8eaec;
+  font-weight: 300;
+}
+
+.Mycontact.education h5 {
+  color: #03a9f4;
+  font-weight: 600;
+}
+
+.Mycontact.language {
+  float: left;
+  width: 40%;
+}
+
+.Mycontact.language .percent {
+  position: relative;
+  width: 100%;
+  height: 10px;
+  background: #f0f0f0;
+  display: block;
+  margin-top: 5px;
+}
+
+.Mycontact.language .percent div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #03a9f4;
+}
+
+.Mycontact.language.skills .percent div {
+  background-color: rgb(71, 150, 78);
+}
+
+.Container .The_right_side {
+  position: relative;
+  background: #fff;
+  padding: 40px;
+  border-radius: 0px 0px 20px 20px;
+  padding-top: 10px;
+}
+
+.about {
+  margin-top: 30px;
+}
+
+.about:last-child {
+  margin-bottom: 0;
+}
+
+.title2 {
+  color: #003147;
+
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+
+p {
+  color: #333;
+}
+
+.about .box {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+}
+
+.about .box .year_company {
+  min-width: 150px;
+}
+
+/*.about .box .year_company h4 {
+  text-transform: uppercase;
+  color: #848c90;
+  font-weight: 600;
+}*/
+
+.about .box .text h4 {
+  text-transform: uppercase;
+  color: #2a7da2;
+  font-size: 16px;
+  padding-left: 30px;
+}
+
+.about .box .text p {
+  padding-left: 30px;
+}
+
+.skills .box {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills .box h4 {
+  text-transform: uppercase;
+  color: #848c99;
+  font-weight: 500;
+}
+
+.skills .box .percent {
+  position: relative;
+  width: 100%;
+  height: 10px;
+  background: #f0f0f0;
+}
+
+.skills .box .percent div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #03a9f4;
+}
+
+.Mycontact.language.skills {
+  float: right;
+  width: 40%;
+  margin-top: -174px;
+  box-sizing: border-box;
+}
+
+.language_skills_fix {
+  width: 100%;
+  margin: auto;
+  display: inline;
+}
+.clear {
+  clear: both;
+}
+
+/* interest bottom*/
+.interest {
+  margin-bottom: 100px;
+  margin-top: 60px;
+}
+.interest ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.interest ul li {
+  list-style: none;
+  color: #333;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.interest ul li .fa {
+  color: #03a9f4;
+  font-size: 18px;
+  width: 20px;
+}
+
+/*logos design*/
+.logos div {
+  display: inline-block;
+  margin-left: 40px;
+  align-items: center;
+}
+
+.logos div.zurilogo {
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
+  margin-left: 40px;
+}
+
+.logos div.Hnglogo {
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
+  margin-left: 40px;
+}
+
+.logos div.ifglogo {
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
+  margin-left: 40px;
+}
+
+@media (max-width: 1000px) {
+  .Container {
+    margin: 10px;
+
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .interest ul {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .about.interest {
+    margin-top: 40px;
+  }
+
+  .language_skills_fix {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .Mycontact.language.skills {
+    margin-top: 1px;
+  }
+
+  @media (max-width: 1000px) {
+    .about .box {
+      flex-direction: column;
+    }
+
+    .about .box .year_company {
+      margin-bottom: 5px;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    .education_fix {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      margin-top: 230px;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    .logos div {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      margin-bottom: 20px;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    .logos div.zurilogo {
+      margin-left: 0px;
+    }
+
+    .logos div.Hnglogo {
+      margin-left: 0px;
+    }
+
+    .logos div.ifglogo {
+      margin-left: 0px;
+    }
+  }
+}
